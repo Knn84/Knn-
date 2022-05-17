@@ -1,0 +1,507 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contanier {
+  font-family: PingFang TC;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.contanier .header {
+  margin-right: 42px;
+  margin-left: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+.contanier .header .img1 {
+  width: 214px;
+}
+
+.contanier .header .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contanier .header .list ul {
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 79px;
+}
+
+.contanier .header .list ul li {
+  margin-left: 60px;
+}
+
+.contanier .header .list ul li a {
+  display: block;
+  color: #3f5d45;
+}
+
+.contanier .header .list ul li a:hover {
+  background: #3f5d45;
+  color: white;
+  padding: 10px;
+}
+
+.contanier .img2 {
+  margin-right: 42px;
+  margin-left: 42px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.contanier .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 42px;
+  margin-left: 42px;
+}
+
+.contanier .content .listLeft {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.contanier .content .listLeft p {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #eaf0ed;
+  background: #3f5d45;
+}
+
+.contanier .content .listLeft ul {
+  width: 300px;
+}
+
+.contanier .content .listLeft ul li {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 1px solid #eaf0ed;
+}
+
+.contanier .content .listLeft ul li:hover {
+  background: #eaf0ed;
+}
+
+.contanier .content .listLeft ul li a {
+  color: #3f5d45;
+  display: block;
+}
+
+.contanier .content .listRight ul {
+  width: 640px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contanier .content .listRight ul li {
+  width: 300px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.contanier .content .listRight ul li .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contanier .content .listRight ul li .text a {
+  width: 300px;
+  background: #eaf0ed;
+  text-align: center;
+  font-size: 24px;
+  color: #3f5d45;
+  font-weight: 600;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.contanier .content .listRight ul li .text a:hover {
+  background: #3f5d45;
+  color: #eaf0ed;
+}
+
+.contanier .content .listRight ul li .text p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 150px;
+  border: 1px solid #eaf0ed;
+  color: #3f5d45;
+  font-size: 20px;
+}
+
+.contanier .content .listRight ul li .text p span {
+  font-weight: 600;
+}
+
+.contanier .content .listRight ul li .favor {
+  width: 20px;
+  position: absolute;
+  right: 22px;
+  top: 19px;
+}
+
+.contanier .content .listRight ul li .tag {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 600;
+  top: 0;
+  left: 20px;
+  background: #3F5D45;
+  color: #eaf0ed;
+  padding: 10px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+.contanier .page {
+  margin-bottom: 60px;
+}
+
+.contanier .page ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 42px;
+  margin-top: 46px;
+}
+
+.contanier .page ul li {
+  font-size: 20px;
+  color: #3F5D45;
+  border: 1px solid #EAF0ED;
+}
+
+.contanier .page ul li a {
+  width: 60px;
+  height: 60px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: block;
+  text-align: center;
+  color: #3F5D45;
+}
+
+.contanier .page ul li a:hover {
+  background: #3f5d45;
+  color: #eaf0ed;
+}
+
+.contanier .footer-top {
+  height: 116px;
+  background: #3f5d45;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contanier .footer-top .footer-hader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contanier .footer-top .footer-hader .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 124px;
+}
+
+.contanier .footer-top .footer-hader .left p {
+  line-height: 40px;
+  font-size: 24px;
+  color: #eaf0ed;
+}
+
+.contanier .footer-top .footer-hader .left img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.contanier .footer-top .footer-hader .right {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  width: 316px;
+  height: 56px;
+  background: #eaf0ed;
+}
+
+.contanier .footer-top .footer-hader .right .mail {
+  height: 24px;
+  width: 24px;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+.contanier .footer-top .footer-hader .btn {
+  width: 64px;
+  background: #FFE180;
+}
+
+.contanier .footer-top .footer-hader .btn img {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.contanier .footer {
+  background: #EAF0ED;
+  height: 341px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contanier .footer .footer-left {
+  padding-left: 122px;
+}
+
+.contanier .footer .footer-img {
+  width: 171px;
+  padding-top: 40px;
+}
+
+.contanier .footer .footer-address ul {
+  padding-top: 115.5px;
+}
+
+.contanier .footer .footer-address ul li {
+  font-size: 16px;
+  font: normal normal normal 16px/24px Helvetica Neue;
+  color: #3f5d45;
+}
+
+.contanier .footer .footer-address ul li a {
+  color: #3f5d45;
+}
+
+.contanier .footer .sm-logo {
+  margin-top: 30px;
+}
+
+.contanier .footer .sm-logo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contanier .footer .sm-logo ul li {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+.contanier .footer .footer-right h2 {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  color: #3F5D45;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-right: 121px;
+  margin-top: 30px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+/*# sourceMappingURL=all.css.map */

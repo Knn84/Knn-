@@ -43,6 +43,7 @@
             }
         }
         @media(max-width:375px){
+            max-width: 100%;
             li{
                 width: 100%;
             }
@@ -89,11 +90,13 @@
         }
 
         @media(max-width:768px) {
+            max-width: 100%;
             li {
                 width: 50%;
             }
         }
         @media(max-width:376px){
+            max-width: 100%;
             li{
                 width: 100%;
         }

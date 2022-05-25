@@ -1,5 +1,17 @@
 //全站設定
 body{
-    color: $text-color;
-
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+    
+    
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+sub{
+    vertical-align: sub;
 }

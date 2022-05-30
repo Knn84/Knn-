@@ -159,7 +159,7 @@ sub {
 }
 
 .wrap {
-  background-image: url("https: //raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg");
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg");
   background-repeat: no-repeat;
   background-size: 1200px;
   background-position: right top;
@@ -167,7 +167,7 @@ sub {
 
 @media (max-width: 768px) {
   .wrap {
-    background-image: url("https: //raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg");
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg");
     background-size: 400px;
     background-position: left 50% top 15%;
   }

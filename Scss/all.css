@@ -195,6 +195,7 @@ sub {
 }
 
 .header {
+  width: 100%;
   padding-top: 24px;
   padding-bottom: 30px;
   display: -webkit-box;
@@ -650,5 +651,207 @@ sub {
   .content-card-body .content-card-body-right p {
     text-align: center;
   }
+}
+
+.content-footer {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.content-footer h2 {
+  padding-bottom: 104px;
+  text-align: center;
+  font: normal normal bold 32px/46px Noto Sans TC;
+  color: #221E1F;
+}
+
+.content-footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-footer ul li {
+  width: 352px;
+  margin-right: 16px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+}
+
+.content-footer ul li p {
+  width: 352px;
+  padding-top: 48px;
+  padding-bottom: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.content-footer ul li img {
+  position: absolute;
+  top: 90px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.content-footer ul li .user {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 32px;
+}
+
+.content-footer ul li .user h4 {
+  padding-top: 24px;
+  padding-bottom: 8px;
+  font: normal normal bold 16px/24px Noto Sans TC;
+  color: #221E1F;
+}
+
+.content-footer ul li .user p {
+  text-align: left;
+  padding: 0;
+  padding-bottom: 24px;
+  border-bottom: 0px;
+}
+
+.content-footer ul li .user .star {
+  position: absolute;
+  top: -60px;
+  left: 200px;
+  width: 16px;
+  height: 16px;
+}
+
+.content-footer ul li .user .star li {
+  margin-right: 25px;
+}
+
+.content-footer .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 24px;
+}
+
+.content-footer .pagination li {
+  width: 10px;
+  height: 10px;
+  background: #DDDDDD 0% 0% no-repeat padding-box;
+  border-radius: 50px;
+}
+
+.content-footer .pagination .yel {
+  width: 16px;
+  height: 10px;
+  background: #FFD153 0% 0% no-repeat padding-box;
+}
+
+@media (max-width: 768px) {
+  .content-footer ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content-footer ul .info3 {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-footer ul .info2 {
+    display: none;
+  }
+}
+
+.footer-banner {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.footer-banner .img-bg {
+  width: 100%;
+  z-index: -1;
+  padding-bottom: 100px;
+}
+
+.footer-banner .img-sg {
+  display: none;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .footer-banner .img-bg {
+    display: none;
+  }
+  .footer-banner .img-sg {
+    display: block;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.footer-banner .footer-info {
+  position: absolute;
+  top: 350px;
+  left: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-banner .footer-info h2 {
+  text-align: center;
+  font: normal normal bold 32px/46px Noto Sans TC;
+  color: #221E1F;
+  margin-bottom: 60px;
+}
+
+.footer-banner .footer-info a {
+  padding: 12px 32px 12px 32px;
+  background: #56C4C5 0% 0% no-repeat padding-box;
+  border-radius: 27px;
+  font: normal normal normal 18px/26px Comfortaa;
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .footer-banner .footer-info {
+    top: 520px;
+    left: 190px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-banner .footer-info {
+    top: 390px;
+  }
+}
+
+.footer p {
+  padding: 16px 0 16px 0;
+  text-align: center;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
 }
 /*# sourceMappingURL=all.css.map */

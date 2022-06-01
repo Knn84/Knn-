@@ -779,36 +779,28 @@ sub {
 }
 
 .footer-banner {
-  position: relative;
-  margin-bottom: 100px;
-}
-
-.footer-banner .img-bg {
-  width: 100%;
-  z-index: -1;
-  padding-bottom: 100px;
-}
-
-.footer-banner .img-sg {
-  display: none;
-  padding-bottom: 100px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 60vh;
 }
 
 @media (max-width: 768px) {
-  .footer-banner .img-bg {
-    display: none;
+  .footer-banner {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg");
+    height: 100vh;
   }
-  .footer-banner .img-sg {
-    display: block;
-    width: 100%;
-    z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .footer-banner {
+    height: 80vh;
   }
 }
 
 .footer-banner .footer-info {
-  position: absolute;
-  top: 350px;
-  left: 750px;
+  padding-top: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -819,6 +811,18 @@ sub {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 768px) {
+  .footer-banner .footer-info {
+    padding-top: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-banner .footer-info {
+    padding-top: 380px;
+  }
 }
 
 .footer-banner .footer-info h2 {
@@ -836,22 +840,22 @@ sub {
   color: #FFFFFF;
 }
 
-@media (max-width: 768px) {
-  .footer-banner .footer-info {
-    top: 520px;
-    left: 190px;
-  }
-}
-
-@media (max-width: 576px) {
-  .footer-banner .footer-info {
-    top: 390px;
-  }
-}
-
 .footer p {
   padding: 16px 0 16px 0;
   text-align: center;
   background: #F5F5F5 0% 0% no-repeat padding-box;
+}
+
+.top {
+  position: fixed;
+  top: 67%;
+  right: 48px;
+  z-index: 3;
+}
+
+@media (max-width: 768px) {
+  .top {
+    right: 10px;
+  }
 }
 /*# sourceMappingURL=all.css.map */

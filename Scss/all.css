@@ -1419,6 +1419,12 @@ sub {
   background-color: #f5f5f5;
 }
 
+@media (max-width: 768px) {
+  .wrap-content .content-footer ul li p {
+    max-width: 100%;
+  }
+}
+
 .wrap-content .content-footer ul li .plus {
   background-image: url("https://yanchengwww.github.io/chatTalkerAI/image/icon_plus.svg");
   background-position: center right 20px;

@@ -985,6 +985,11 @@
                         background-color: #f5f5f5;
                     }
                 }
+                p{
+                @media (max-width: 768px) {
+                    max-width: 100%;
+                    }
+                }
                 .plus{
                     background-image: url("https://yanchengwww.github.io/chatTalkerAI/image/icon_plus.svg");
                     background-position: center right 20px;

@@ -195,7 +195,6 @@ sub {
 }
 
 .header {
-  width: 100%;
   padding-top: 24px;
   padding-bottom: 30px;
   display: -webkit-box;
@@ -210,16 +209,9 @@ sub {
   width: 218px;
 }
 
-.header a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.header .logo-link {
+  text-align: center;
+  padding-top: 8px;
   width: 128px;
   height: 40px;
   font: normal normal normal 16px/24px Noto Sans TC;
@@ -228,7 +220,7 @@ sub {
   border-radius: 22px;
 }
 
-.header a:hover {
+.header .logo-link:hover {
   background: blue;
   color: yellow;
 }
@@ -280,7 +272,7 @@ sub {
           justify-content: center;
 }
 
-.header-content .content-left h3 {
+.header-content .content-left h1 {
   font: normal normal bold 18px/26px Noto Sans TC;
   color: #56c4c5;
 }
@@ -331,7 +323,7 @@ sub {
 }
 
 .content-community {
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .content-community h2 {
@@ -426,7 +418,7 @@ sub {
 }
 
 .content-card-head {
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .content-card-head h2 {
@@ -436,7 +428,7 @@ sub {
   color: #221e1f;
 }
 
-.content-card-head h3 {
+.content-card-head p {
   text-align: center;
   font: normal normal normal 20px/29px Noto Sans TC;
   padding-bottom: 48px;
@@ -454,12 +446,13 @@ sub {
 }
 
 .content-card-head ul li {
-  width: 25%;
-  padding-left: 8px;
-  padding-right: 8px;
+  width: 23%;
+  margin-right: 8px;
+  margin-left: 8px;
   margin-bottom: 24px;
   -webkit-box-shadow: 0px 2px 10px #00000014;
           box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
 }
 
 .content-card-head ul li img {
@@ -520,8 +513,21 @@ sub {
   }
 }
 
+@media (max-width: 576px) {
+  .content-card-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .content-card-body .content-card-body-left {
-  padding-bottom: 100px;
+  margin-bottom: 100px;
+  max-width: 50%;
 }
 
 .content-card-body .content-card-body-left .left-img {
@@ -540,10 +546,6 @@ sub {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -48px;
-  margin-bottom: -28px;
-  padding-top: -32px;
-  padding-left: -32px;
 }
 
 .content-card-body .content-card-body-left ul li {
@@ -554,9 +556,11 @@ sub {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 28%;
+  width: 40%;
   padding-top: 32px;
   padding-left: 32px;
+  padding-bottom: 48px;
+  padding-right: 32px;
   margin-right: 48px;
   margin-bottom: 28px;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -580,24 +584,24 @@ sub {
 
 @media (max-width: 768px) {
   .content-card-body .content-card-body-left ul {
-    max-width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  }
+  .content-card-body .content-card-body-left ul li {
+    width: 100%;
   }
 }
 
 @media (max-width: 576px) {
-  .content-card-body .content-card-body-left ul li {
-    width: 50%;
+  .content-card-body .content-card-body-left {
+    width: 100%;
   }
 }
 
 .content-card-body .content-card-body-right {
-  max-width: 100%;
+  width: 50%;
+  padding-left: 137px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -635,10 +639,11 @@ sub {
 
 @media (max-width: 768px) {
   .content-card-body .content-card-body-right {
-    max-width: 100%;
+    max-width: 40%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 0;
   }
   .content-card-body .content-card-body-right a {
     margin-bottom: 20px;
@@ -650,6 +655,7 @@ sub {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    max-width: 100%;
   }
   .content-card-body .content-card-body-right p {
     text-align: center;
@@ -785,11 +791,12 @@ sub {
 }
 
 .footer-banner {
+  padding-top: 260px;
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
-  height: 60vh;
+  max-width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -807,7 +814,6 @@ sub {
 }
 
 .footer-banner .footer-info {
-  padding-top: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -822,13 +828,13 @@ sub {
 
 @media (max-width: 768px) {
   .footer-banner .footer-info {
-    padding-top: 500px;
+    padding-top: 190px;
   }
 }
 
 @media (max-width: 576px) {
   .footer-banner .footer-info {
-    padding-top: 380px;
+    padding-top: 170px;
   }
 }
 
@@ -894,9 +900,8 @@ sub {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 @media (max-width: 768px) {
@@ -936,14 +941,12 @@ sub {
 }
 
 .background-header {
-  max-width: 1350px;
-  margin: 0 auto;
-  margin-bottom: 100px;
+  padding: 0 16px;
   background: #f7f9fd 0% 0% no-repeat padding-box;
   border-radius: 0px 0px 0px 300px;
   height: 470px;
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner.svg");
-  background-position: top right;
+  background-position: top right 250px;
   background-repeat: no-repeat;
   height: 559px;
 }
@@ -966,6 +969,7 @@ sub {
 
 .background-header .content {
   max-width: 1120px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -1120,7 +1124,7 @@ sub {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .wrap-content .card-left .card-left-card p {
@@ -1252,7 +1256,7 @@ sub {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .wrap-content .card-right .card-right-card p {

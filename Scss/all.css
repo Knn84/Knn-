@@ -1485,6 +1485,7 @@ sub {
   padding-top: 16px;
   font: normal normal normal 16px/32px Noto Sans TC;
   color: #747474;
+  border: none;
 }
 
 .wrap-content .content-footer ul li .answer.active {

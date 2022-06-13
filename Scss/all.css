@@ -474,6 +474,11 @@ sub {
 
 @media (max-width: 768px) {
   .content-card-head ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     max-width: 100%;
     padding-left: 16px;
   }
@@ -1387,7 +1392,7 @@ sub {
 }
 
 .wrap-content .content-footer ul li {
-  max-width: 902px;
+  width: 100%;
   margin-bottom: 16px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   -webkit-box-shadow: 0px 2px 10px #00000014;
@@ -1425,7 +1430,7 @@ sub {
 
 @media (max-width: 768px) {
   .wrap-content .content-footer ul li p {
-    max-width: 100%;
+    width: 100%;
   }
 }
 

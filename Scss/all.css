@@ -817,6 +817,7 @@ sub {
 }
 
 .footer-banner {
+  margin: 0 auto;
   padding-top: 260px;
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg");
   background-size: contain;
@@ -840,6 +841,7 @@ sub {
 }
 
 .footer-banner .footer-info {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

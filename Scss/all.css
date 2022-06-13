@@ -490,6 +490,8 @@ sub {
 @media (max-width: 576px) {
   .content-card-head ul {
     max-width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .content-card-head ul li {
     width: 100%;
@@ -1078,6 +1080,7 @@ sub {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 100%;
   margin-bottom: 100px;
 }
 

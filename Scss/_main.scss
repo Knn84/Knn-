@@ -279,7 +279,7 @@
 
         @media (max-width: 576px) {
             max-width: 100%;
-
+            flex-wrap: wrap;
             li {
                 width: 100%;
             }
@@ -728,6 +728,7 @@
     .card {
         display: flex;
         justify-content: center;
+        max-width: 100%;
         margin-bottom: 100px;
         @media (max-width: 576px) {
             flex-wrap: wrap;

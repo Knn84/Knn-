@@ -147,8 +147,6 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        margin-right: -8px;
-        margin-left: -8px;
 
         li {
             display: flex;
@@ -738,7 +736,7 @@
         justify-content: center;
         max-width: 100%;
         margin-bottom: 100px;
-        @media (max-width: 576px) {
+        @media (max-width: 768px) {
             flex-wrap: wrap;
         }
     }
@@ -758,15 +756,14 @@
         background: #ffffff 0% 0% no-repeat padding-box;
         box-shadow: 0px 2px 10px #00000014;
         border-radius: 12px;
-        @media (max-width: 576px){
+        @media (max-width: 768px){
             margin-bottom: 16px;
             margin-left: 16px;
         }
 
         p {
             text-align: center;
-            padding-top: 32px;
-            padding-bottom: 32px;
+            padding: 32px;
         }
 
         .card-left-card {
@@ -783,8 +780,6 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 169px;
-                height: 108px;
                 background: #f5f5f5 0% 0% no-repeat padding-box;
                 border-radius: 12px;
 
@@ -809,8 +804,6 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 169px;
-                height: 108px;
                 background: #f5f5f5 0% 0% no-repeat padding-box;
                 border-radius: 12px;
 
@@ -866,8 +859,7 @@
 
         p {
             text-align: center;
-            padding-top: 32px;
-            padding-bottom: 32px;
+            padding: 32px;
         }
 
         .card-right-card {
@@ -884,8 +876,6 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 169px;
-                height: 108px;
                 background: #f5f5f5 0% 0% no-repeat padding-box;
                 border-radius: 12px;
 
@@ -910,8 +900,6 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 169px;
-                height: 108px;
                 background: #f5f5f5 0% 0% no-repeat padding-box;
                 border-radius: 12px;
 
